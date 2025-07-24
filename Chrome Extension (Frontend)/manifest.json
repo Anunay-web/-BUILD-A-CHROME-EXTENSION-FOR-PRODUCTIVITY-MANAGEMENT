@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Tracker",
+  "description": "Track time, block distractions, and improve productivity.",
+  "version": "1.0",
+  "permissions": ["storage", "tabs", "webRequest", "webNavigation", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.png"
+  },
+  "host_permissions": ["<all_urls>"]
+}
